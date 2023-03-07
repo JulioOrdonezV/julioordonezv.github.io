@@ -16,11 +16,20 @@
         color: #fff;
         padding: 20px;
       }
-      h1 {
+      h1:first-of-type {
         margin: 0;
         font-size: 28px;
         font-weight: normal;
+        flex: 1;
       }
+
+      h1:last-of-type {
+        margin: 0;
+        font-size: 28px;
+        font-weight: normal;
+        color: white;
+        flex-shrink: 0;
+      }    
       .circle {
         width: 200px;
         height: 200px;
