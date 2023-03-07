@@ -5,16 +5,16 @@
     <style>
       /* CSS styles */
       body {
-        font-family: Arial, sans-serif;
+        font-family:'Helvetica', sans-serif;
         background-color: #f5f5f5;
       }
       header {
-        background-color: #333;
-        color: #b8e0e9;
-        padding: 20px;
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: flex-start;
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
       }
       h1 {
         margin: 0;
@@ -22,12 +22,13 @@
         font-weight: normal;
       }
       .circle {
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
         border-radius: 50%;
+        margin-right: 20px;
+        order: -1; /* image appears on the left */
         background-image: url(photo/pic.jpg);
-        background-size: cover;
-        margin-left: auto;
       }
       h2 {
         color: #333;
