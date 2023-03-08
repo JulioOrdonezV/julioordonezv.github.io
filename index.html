@@ -21,7 +21,6 @@
         font-size: 28px;
         font-weight: normal;
         color: #00BFFF;
-        flex: 1;
       }
 
       h1:last-of-type {
@@ -67,15 +66,16 @@
         margin-left: 20px;
       }
       .name-container {
+        display: flex;
+        flex-direction: column;
         flex: 1;
-        align-self: flex-start;
       }
     </style>
   </head>
   <body>
     <header>
-      <h1>Curriculum Vitae</h1>
-      <div class="name-container">
+      <h1 style="flex: 0 0 auto;">Curriculum Vitae</h1>
+      <div class="name-container" style="flex: 1;">
         <h1>Julio Andres Ordonez Viales</h1>
       </div>
     </header>
