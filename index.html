@@ -15,7 +15,6 @@
         background-color: #333;
         color: #fff;
         padding: 20px;
-        flex-wrap: wrap;
       }
       h1 {
         margin: 0;
@@ -23,11 +22,11 @@
         font-weight: normal;
         flex: 1;
       }
-      h1:first-of-type {
-        color: #00BFFF;
+      .name-container {
+        flex: 1;
       }
-      h1:last-of-type {
-        color: white;
+      .blue {
+        color: #00BFFF;
       }
       .circle {
         width: 200px;
@@ -64,18 +63,13 @@
       .description {
         margin-left: 20px;
       }
-      .name-container {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-      }
     </style>
   </head>
   <body>
     <header>
-      <h1>Curriculum Vitae</h1>
+      <h1 class="blue">Curriculum Vitae</h1>
       <div class="name-container">
-        <h1 style="color: white;">Julio Andres Ordonez Viales</h1>
+        <h1>Julio Andres Ordonez Viales</h1>
       </div>
     </header>
     
