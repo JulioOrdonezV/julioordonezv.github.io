@@ -95,28 +95,42 @@
 
       .section {
         margin-bottom: 20px;
+        display: flex;
       }
-
+      
       .section h2 {
         margin-top: 0;
-      }
-
-      .sub-section {
-        margin-left: 20px;
+        font-size: 24px;
+        text-align: left;
         position: relative;
+        margin-right: 20px;
       }
-
-      .sub-section:before {
+      
+      .section h2:after {
         content: "";
         position: absolute;
         top: 0;
         bottom: 0;
-        left: -10px;
-        border-left: 1px solid #ccc;
+        width: 2px;
+        background-color: #333;
+        right: -10px;
+        margin-right: 10px;
       }
-
-      .sub-section:last-child:before {
-        display: none;
+      
+      .sub-section {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .sub-section p:last-child {
+        margin-bottom: 0;
+      }
+      
+      .sub-section:not(:last-child) {
+        border-bottom: 2px solid #333;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
       }
       
       dl {
