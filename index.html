@@ -83,17 +83,40 @@
         flex-wrap: wrap;
         margin-top: 20px;
       }
-      
-      .left-column, .right-column {
+      .left-column {
         width: 50%;
+        float: left;
       }
-      
+
+      .right-column {
+        width: 50%;
+        float: left;
+      }
+
       .section {
         margin-bottom: 20px;
       }
-      
+
       .section h2 {
         margin-top: 0;
+      }
+
+      .sub-section {
+        margin-left: 20px;
+        position: relative;
+      }
+
+      .sub-section:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -10px;
+        border-left: 1px solid #ccc;
+      }
+
+      .sub-section:last-child:before {
+        display: none;
       }
       
       dl {
