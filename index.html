@@ -79,21 +79,6 @@
       .icon {
         color: white;
       }
-      @media only screen and (max-width: 680px) {
-        .contact-container {
-          flex-wrap: wrap;
-        }
-        .contact {
-          width: 100%;
-        }
-        .columns-container {
-          flex-direction: column;
-        }
-        .left-column,
-        .right-column {
-          width: 100%;
-        }
-      }
       .columns-container {
         display: flex;
         flex-wrap: wrap;
@@ -102,11 +87,9 @@
       .left-column {
         width: 35%;
       }
-
       .right-column {
         width: 65%;
       }
-
       .section {
         margin-bottom: 20px;
         display: flex;
@@ -139,7 +122,6 @@
         right: -10px;
         margin-right: 10px;
       }
-      
       .sub-section {
         display: flex;
         flex-direction: column;
@@ -151,6 +133,21 @@
       }
       li {
         margin-bottom: 10px;
+      }
+      @media only screen and (max-width: 680px) {
+        .contact-container {
+          flex-wrap: wrap;
+        }
+        .contact {
+          width: 100%;
+        }
+        .columns-container {
+          flex-direction: column;
+        }
+        .left-column,
+        .right-column {
+          width: 100%;
+        }
       }
     </style>
         <!-- Google tag (gtag.js) - Google Analytics -->
